@@ -15,18 +15,18 @@ Route::get('/', function () {
     return view('layouts.index');
 });
 
-Route::get('/บุคลากร',function(){
+Route::get('/committee',function(){
 	return view('layouts.committee');
 });
 
-Route::get('/ข้อมูลพรรณไม้',function(){
+Route::get('/plant_list',function(){
 	return view('layouts.plantlist');
 });
 
-Route::get('/ติดต่อเรา',function(){
+Route::get('/contact_us',function(){
 	return view('layouts.contact');
 });
 
-Route::get('/สวนพฤกษศาสตร์อะไร',function(){
+Route::get('/know_us',function(){
 	return view('layouts.about');
 });

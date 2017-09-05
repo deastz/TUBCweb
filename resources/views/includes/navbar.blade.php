@@ -7,16 +7,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="{{ url('/สวนพฤกษศาสตร์อะไร') }}">สวนพฤกษศาสตร์อะไร</a>
+        <a class="nav-link" href="{{ url('/know_us') }}">สวนพฤกษศาสตร์อะไร</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ url('/บุคลากร') }}">อาจารย์และบุคลากร</a>
+        <a class="nav-link" href="{{ url('/committee') }}">อาจารย์และบุคลากร</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ url('/ข้อมูลพรรณไม้') }}">ข้อมูลพรรณไม้</a>
+        <a class="nav-link" href="{{ url('/plant_list') }}">ข้อมูลพรรณไม้</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ url('/ติดต่อเรา') }}">ติดต่อเรา</a>
+        <a class="nav-link" href="{{ url('/contact_us') }}">ติดต่อเรา</a>
       </li>
     </ul>
   </div>
