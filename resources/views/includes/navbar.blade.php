@@ -1,23 +1,27 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #eaf9ea;">
-  <a class="navbar-brand" href="{{ url('/') }}">หน้าแรก</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar navbar-inverse navbar-expand-lg" style="background-color: #18bc9c">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+      </button>
+      <a class="navbar-brand" href="{{ url('/') }}" style="font-size: 2em;letter-spacing: 0.05em;">สวนพฤกษศาสตร์</a>
+    </div>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url('/know_us') }}">สวนพฤกษศาสตร์อะไร</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url('/committee') }}">อาจารย์และบุคลากร</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url('/plant_list') }}">ข้อมูลพรรณไม้</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url('/contact_us') }}">ติดต่อเรา</a>
-      </li>
-    </ul>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/know_us') }}" style="font-size: 1.5em;">รู้จักสวนพฤกษศาสตร์</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/committee') }} " style="font-size: 1.5em">อาจารย์และบุคลากร</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/plant_list') }}" style="font-size: 1.5em">ข้อมูลพรรณไม้</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/contact_us') }}" style="font-size: 1.5em">ติดต่อเรา</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
+

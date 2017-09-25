@@ -7,9 +7,11 @@
 <body>
 	@include ('includes.navbar')
 	<div class="container-fluid">
-		<div class="container" style="margin-top: 2%">
-		<span class="oi oi-list"></span><h2>พรรณไม้</h2>
-			<div style="margin-left: 1%">
+		<div class="panel panel-success" style="margin-top: 2%">
+			<div class="panel-heading">
+				<h2 class="panel-title larger-panel-title">พรรณไม้</h2>
+			</div>
+			<div class="panel-body" style="margin-left: 1%">
 				<ul class="list-group">
 					<li class="list-group-item">
 						<div class="row">
@@ -17,7 +19,7 @@
 								<img src="#">
 							</div>
 							<div class="col-md-9">
-								<a href="#">link</a>
+								<a href="#" class="lead" style="color: #008cba">link</a>
 								<div style="margin-left: 1%">
 									xxxxxxxxxx
 								</div>

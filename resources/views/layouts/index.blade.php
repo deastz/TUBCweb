@@ -30,40 +30,47 @@
  	 	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
  	   <span class="carousel-control-next-icon" aria-hidden="true"></span>
   	</a>
-	</div>
-		<div class="container" style="margin-top: 2%">
-			<span class="oi oi-info"></span><h2>ข่าวประชาสัมพันธ์</h2>
-			<ul class="list-group" style="text-align: center">
-				<li class="list-group-item">
-					<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
-				</li>
-				<li class="list-group-item">
-					<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
-				</li>
-				<li class="list-group-item">
-					<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
-				</li>
-				<li class="list-group-item">
-					<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
-				</li>
-			</ul>
 		</div>
-		<div class="container" style="margin-top: 2%">
-			<span class="oi oi-info"></span><h2>งานบูรณาการสวนพฤกษศาสตร์</h2>
-			<div class="row" style="text-align: center">
-				<div class="col">
-					<a href="">ภาษาไทย</a>
-				</div>
-				<div class="col">
-					<a href="">ภาษาอัวกฤษ</a>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-info" style="margin-top: 2%">
+					<div class="panel-heading">
+						<h1 class="panel-title larger-panel-title"><i class="fa fa-info"></i> ข่าวประชาสัมพันธ์</h1>
+					</div>
+					<div class="panel-body">
+						<ul class="list-group" style="text-align: center">
+							<li class="list-group-item">
+								<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
+							</li>
+							<li class="list-group-item">
+								<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
+							</li>
+							<li class="list-group-item">
+								<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
+							</li>
+							<li class="list-group-item">
+								<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="row" style="text-align: center">
-				<div class="col">
-					<a href="">สังคมศึกษา</a>
-				</div>
-				<div class="col">
-					<a href="">วิทยาศาสตร์</a>
+			<div class="col-md-6">
+				<div class="panel panel-success" style="margin-top: 2%">
+					<div class="panel panel-heading">
+						<h1 class="panel-title">งานบูรณาการสวนพฤกษศาสตร์</h1>
+					</div>
+					<div class="panel-body">
+						<div class="row" style="text-align: center">
+							<a href="" class="btn btn-info col-sm-4 col-md-offset-1">ภาษาไทย</a>
+							<a href="" class="btn btn-danger col-sm-4 col-md-offset-2">ภาษาอัวกฤษ</a>
+						</div>
+						<br>
+						<div class="row" style="text-align: center">
+							<a href="" class="btn btn-warning col-sm-4 col-md-offset-1">สังคมศึกษา</a>
+							<a href="" class="btn btn-success col-sm-4 col-md-offset-2">วิทยาศาสตร์</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

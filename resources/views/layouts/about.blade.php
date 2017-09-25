@@ -7,9 +7,11 @@
 <body>
 	@include ('includes.navbar')
 	<div class="container-fluid">
-		<div class="container" style="margin-top: 2%">
-			<span class="oi oi-info"></span><h2>สวนพฤกษศาสตร์โรงเรียนคืออะไร</h2>
-			<div class="container" style="background-color: #a4f298;text-align:center;">
+		<div class="panel panel-success" style="margin-top: 2%">
+			<div class="panel-heading">
+				<h2 class="panel-title larger-panel-title">สวนพฤกษศาสตร์โรงเรียนคืออะไร <i class="fa fa-question"></i></h2>
+			</div>
+			<div class="panel-body">
 				<p>    โครงการอนุรักษ์พรรณพืชอันเนื่องมาจากพระราชดำริได้ดำเนินงานสนองพระราชดำริ
 				จัดตั้งงานสวนพฤกษศาสตร์โรงเรียนเพื่อเป็นการสร้างจิตสำนึกในการอนุรักษ์พันธุกรรมพืช
 			โดยให้เยาวชนใกล้ชิดกับพรรณพืชเห็นคุณค่า ประโยชน์ ความสวยงาม อันก่อให้เกิดความคิด
