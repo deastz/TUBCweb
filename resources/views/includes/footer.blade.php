@@ -1,6 +1,5 @@
-<div class="alert alert-success" height="20%">
+<div height="20%" style="background-color: #43ac6a;border-color: #3c9a5f;margin-bottom: 0px">
 	<p style="color: white" align="center">งานสวนพฤกษศาสตร์โรงเรียนเตรียมอุดมศึกษา</p>
-	<p style="color: white" align="center">โรงเรียนเตรียมอุดมศึกษา 227 ถนนพญาไท เขตปทุมวัน กรุงเทพมหานคร 10330
-โทรศัพท์: 02-254-0287-8, 02-2527001, 02-252-7302-3 โทรสาร: 0-2252-7002 (ธุรการ).</p>
-	<p style="color: white" align="center">All Rights Reserved.</p>
+	<p style="color: white" align="center">โรงเรียนเตรียมอุดมศึกษา 227 ถนนพญาไท เขตปทุมวัน กรุงเทพมหานคร 10330</p>
+	<p style="color: white;margin-bottom: 0px" align="center">All Rights Reserved.</p>
 </div>

@@ -15,7 +15,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 	@include ('includes.navbar')
 	<div class="container-fluid">
-		<div class="panel panel-success" style="margin-top: 2%">
+		<div class="panel panel-success panel-transparent" style="margin-top: 2%">
 			<div class="panel-heading">
 				<h2 class="panel-title"><i class="fa fa-comments"></i> ติดต่อเรา</h2>
 			</div>

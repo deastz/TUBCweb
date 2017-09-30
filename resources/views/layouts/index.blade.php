@@ -5,39 +5,58 @@
 	@include ('includes.headerlib')
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	@include ('includes.navbar')
 	<div class="container-fluid">
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="min-width: 50%;min-height: 50%">
-  		<ol class="carousel-indicators">
-  		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-   	 	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-   	 	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  		</ol>
-  	<div class="carousel-inner">
-    	<div class="carousel-item active">
-      	<img class="d-block w-100" style="width: 50%;height: 50%" src="{{ asset('/imgs/slide1.jpg') }}" alt="First slide">
-    	</div>
-    	<div class="carousel-item">
-    	  <img class="d-block w-100" src="..." alt="Second slide">
- 	   </div>
-  	  <div class="carousel-item">
-    	  <img class="d-block w-100" src="..." alt="Third slide">
-	    </div>
-  	</div>
-	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-  	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
- 	 	</a>
- 	 	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
- 	   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  	</a>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#myCarousel" data-slide-to="0"></li>
+		    <li data-target="#myCarousel" data-slide-to="1"></li>
+		    <li data-target="#myCarousel" data-slide-to="2"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+		    <div class="item active">
+		      <img src="{{ asset('/imgs/slide1.jpg') }}" alt="Los Angeles">
+		    </div>
+
+		    <div class="item">
+		      <img src="{{ asset('/imgs/slide1.jpg') }}" alt="Chicago">
+		    </div>
+
+		    <div class="item">
+		      <img src="{{ asset('/imgs/slide1.jpg') }}" alt="New York">
+		    </div>
+		  </div>
+
+		  <!-- Left and right controls -->
+		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		    <span class="fa fa-chevron-left" style="position: absolute;top: 50%;"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		    <span class="fa fa-chevron-right" style="position: absolute;top: 50%;"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
 		</div>
+
 		<div class="row">
-			<div class="col-md-6">
-				<div class="panel panel-info" style="margin-top: 2%">
+			
+			<div class="col-md-4">
+				<div class="panel panel-info panel-transparent" style="margin-top: 2%">
 					<div class="panel-heading">
 						<h1 class="panel-title larger-panel-title"><i class="fa fa-info"></i> ข่าวประชาสัมพันธ์</h1>
 					</div>
-					<div class="panel-body">
+					<div class="panel-body" style="padding-bottom: 0px">
 						<ul class="list-group" style="text-align: center">
 							<li class="list-group-item">
 								<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
@@ -52,24 +71,46 @@
 								<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
 							</li>
 						</ul>
+						<div class="row align-items-end">
+							<a href="#" class="btn btn-lg btn-block btn-info" role="button">ดูข่าวทั้งหมด <i class="fa fa-chevron-circle-right"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="panel panel-success" style="margin-top: 2%">
-					<div class="panel panel-heading">
-						<h1 class="panel-title">งานบูรณาการสวนพฤกษศาสตร์</h1>
+
+			<div class="col-md-4">
+				<div class="panel panel-success panel-transparent" style="margin-top: 2%">
+					<div class="panel panel-heading" style="margin-bottom: 0px">
+						<h1 class="panel-title"><i class="fa fa-file-text-o"></i> งานบูรณาการสวนพฤกษศาสตร์</h1>
 					</div>
 					<div class="panel-body">
 						<div class="row" style="text-align: center">
-							<a href="" class="btn btn-info col-sm-4 col-md-offset-1">ภาษาไทย</a>
-							<a href="" class="btn btn-danger col-sm-4 col-md-offset-2">ภาษาอัวกฤษ</a>
+							<div class="col-sm-6" style="margin-bottom: 3%;">
+								<a href="" class="btn btn-info align-self-center btn-block col-sm-12">ภาษาไทย</a>
+							</div>
+							<div class="col-sm-6" style="margin-bottom: 3%;">
+								<a href="" class="btn btn-danger align-self-center btn-block col-sm-12">ภาษาอังกฤษ</a>
+							</div>
 						</div>
-						<br>
 						<div class="row" style="text-align: center">
-							<a href="" class="btn btn-warning col-sm-4 col-md-offset-1">สังคมศึกษา</a>
-							<a href="" class="btn btn-success col-sm-4 col-md-offset-2">วิทยาศาสตร์</a>
+							<div class="col-sm-6" style="margin-bottom: 3%;">
+								<a href="" class="btn btn-warning align-self-center btn-block col-sm-12">สังคมศึกษา</a>
+							</div>
+							<div class="col-sm-6" style="margin-bottom: 3%;">
+								<a href="" class="btn btn-success align-self-center btn-block col-sm-12">วิทยาศาสตร์</a>
+							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="panel panel-transparent" style="margin-top: 2%;border-color: #4267B2">
+					<div class="panel-heading" style="background-color: #4267B2;border-color: #4267B2">
+						<h1 class="panel-title larger-panel-title" style="color: white"><i class="fa fa-facebook-square"></i> Facebook</h1>
+					</div>
+					<div class="panel-body">
+						<div class="fb-page" data-href="https://www.facebook.com/TUBCofficial/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/TUBCofficial/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/TUBCofficial/">TUBC - งานสวนพฤกษศาสตร์โรงเรียน โรงเรียนเตรียมอุดมศึกษา</a></blockquote></div>
 					</div>
 				</div>
 			</div>
@@ -77,4 +118,4 @@
 	</div>
 	@include("includes.footer")
 </body>
-</html>
+</html>	
