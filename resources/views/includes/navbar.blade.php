@@ -1,5 +1,5 @@
 <img src="{{ asset('/imgs/background.jpg') }}" style="z-index: -1;position: fixed">
-<nav class="navbar navbar-inverse navbar-expand-lg" style="background-color: #18bc9c">
+<nav class="navbar navbar-inverse navbar-expand-lg" style="background-color: #43ac6a">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
         <span class="sr-only">Toggle navigation</span>

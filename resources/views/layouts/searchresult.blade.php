@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ฐานข้อมูลพรรณไม้</title>
+	<title>{{ $key }}</title>
 	@include ('includes.headerlib')
 </head>
 <body>
@@ -47,7 +47,7 @@
 				</div>
 			</div>
 		@endisset
-		@empty($plants)
+		@empty($plants[0])
 			<div class="jumbotron">
 				<h1>ไม่พบข้อมูล</h1>
 			</div>

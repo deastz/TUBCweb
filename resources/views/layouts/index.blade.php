@@ -50,29 +50,24 @@
 		</div>
 
 		<div class="row">
-			
+
 			<div class="col-md-4">
 				<div class="panel panel-info panel-transparent" style="margin-top: 2%">
 					<div class="panel-heading">
-						<h1 class="panel-title larger-panel-title"><i class="fa fa-info"></i> ข่าวประชาสัมพันธ์</h1>
+						<h1 class="panel-title larger-panel-title"><i class="fa fa-info-circle"></i> ข่าวประชาสัมพันธ์</h1>
 					</div>
 					<div class="panel-body" style="padding-bottom: 0px">
-						<ul class="list-group" style="text-align: center">
-							<li class="list-group-item">
-								<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
+						<ul class="list-group" style="text-align: center;">
+							@isset($newsrecs)
+								@foreach($newsrecs as $rec)
+							<li class="list-group-item row">
+								<a href="{{ url('/news/'.$rec->id)}}">{{$rec->title}}</a>
 							</li>
-							<li class="list-group-item">
-								<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
-							</li>
-							<li class="list-group-item">
-								<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
-							</li>
-							<li class="list-group-item">
-								<a href="">รายละเอีดค่ายสวนพฤกษศาสตร์ต.อ.ปี๒๕๖๐</a>
-							</li>
+								@endforeach
+							@endisset
 						</ul>
 						<div class="row align-items-end">
-							<a href="#" class="btn btn-lg btn-block btn-info" role="button">ดูข่าวทั้งหมด <i class="fa fa-chevron-circle-right"></i></a>
+							<a href="{{ url('/newslist') }}" class="btn btn-lg btn-block btn-info" role="button">ดูข่าวทั้งหมด <i class="fa fa-chevron-circle-right"></i></a>
 						</div>
 					</div>
 				</div>
@@ -103,7 +98,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="col-md-4">
 				<div class="panel panel-transparent" style="margin-top: 2%;border-color: #4267B2">
 					<div class="panel-heading" style="background-color: #4267B2;border-color: #4267B2">
@@ -118,4 +113,4 @@
 	</div>
 	@include("includes.footer")
 </body>
-</html>	
+</html>

@@ -11,17 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.index');
-});
+Route::get('/', 'NewsController@index_lists');
 
 Route::get('/committee',function(){
 	return view('layouts.committee');
 });
 
-Route::get('/plant_list',function(){
-	return view('layouts.plantlist');
-});
+Route::get('/plant_list','PlantController@lists');
+
+Route::get('/plant_data/{id}','PlantController@show');
 
 Route::get('/contact_us',function(){
 	return view('layouts.contact');
@@ -30,3 +28,9 @@ Route::get('/contact_us',function(){
 Route::get('/know_us',function(){
 	return view('layouts.about');
 });
+
+Route::get('/newslist','NewsController@lists');
+
+Route::get('/news/{id}','NewsController@show');
+
+Route::post('/plant_search','PlantController@search');
