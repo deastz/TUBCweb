@@ -17,7 +17,7 @@ class CreateNewsTable extends Migration
         $table->increments('id');
         $table->string('title');
         $table->string('img_src')->nullable();
-        $table->string('detail');
+        $table->text('detail');
         $table->date('created_at');
       });
     }

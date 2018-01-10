@@ -7,15 +7,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    <a class="navbar-brand" href="{{ url('/') }}" style="font-size: 2em;letter-spacing: 0.05em;">สวนพฤกษศาสตร์</a>
+    <a class="navbar-brand" href="{{ url('/') }}" style="font-size: 2em;letter-spacing: 0.05em;">สวนพฤกษศาสตร์โรงเรียนเตรียมอุดมศึกษา</a>
   </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-item">
           <a class="nav-link" href="{{ url('/know_us') }}" style="font-size: 1.5em;">รู้จักสวนพฤกษศาสตร์</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url('/committee') }} " style="font-size: 1.5em">อาจารย์และบุคลากร</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ url('/plant_list') }}" style="font-size: 1.5em">ข้อมูลพรรณไม้</a>

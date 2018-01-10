@@ -14,8 +14,8 @@
  /* custom overwrite */
 
 	.navbar-inverse .navbar-nav>li>a:hover{
-		background-color: #118972;
-		border-color: #118972;
+		background-color: #358753;
+		border-color: #2b6e44;
 	}
 	.btn-link:hover{
 		color:#FD76FF;text-decoration:underline;

@@ -14,6 +14,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 	@include ('includes.navbar')
+
 	<div class="container-fluid">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		  <!-- Indicators -->
@@ -30,11 +31,11 @@
 		    </div>
 
 		    <div class="item">
-		      <img src="{{ asset('/imgs/slide1.jpg') }}" alt="Chicago">
+		      <img src="{{ asset('/imgs/holder.jpg') }}" alt="Chicago">
 		    </div>
 
 		    <div class="item">
-		      <img src="{{ asset('/imgs/slide1.jpg') }}" alt="New York">
+		      <img src="{{ asset('/imgs/holder.jpg') }}" alt="New York">
 		    </div>
 		  </div>
 
@@ -78,8 +79,9 @@
 					<div class="panel panel-heading" style="margin-bottom: 0px">
 						<h1 class="panel-title"><i class="fa fa-file-text-o"></i> งานบูรณาการสวนพฤกษศาสตร์</h1>
 					</div>
-					<div class="panel-body">
-						<div class="row" style="text-align: center">
+					<div class="panel-body" style="text-align: center">
+						<h2><br>Coming Soon!<br>&nbsp;</h2>
+						<!--<div class="row">
 							<div class="col-sm-6" style="margin-bottom: 3%;">
 								<a href="" class="btn btn-info align-self-center btn-block col-sm-12">ภาษาไทย</a>
 							</div>
@@ -94,7 +96,7 @@
 							<div class="col-sm-6" style="margin-bottom: 3%;">
 								<a href="" class="btn btn-success align-self-center btn-block col-sm-12">วิทยาศาสตร์</a>
 							</div>
-						</div>
+						</div>-->
 					</div>
 				</div>
 			</div>

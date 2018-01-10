@@ -13,7 +13,7 @@
 					<h4>ค้นหาพรรณไม้</h4>
 				</label>
 				<div class="col-md-8">
-					<input type="text" class="form-control" id="inputSearch" name="inputSearch" placeholder="ชื่อต้นไม้">
+					<input type="text" class="form-control" id="inputSearch" name="inputSearch" placeholder="ชื่อต้นไม้" value="{{$key}}">
 				</div>
 				<div class="col-md-2">
 					<button type="submit" class="btn btn-defualt btn-block btn-success">ค้นหา</button>
@@ -32,18 +32,19 @@
 						<li class="list-group-item">
 							<div class="row">
 								<div class="col-md-3">
-									<img height="50%" width="50%" style="margin:auto; display:block;"  src="{{$plant->img_src}}">
+									<img height="50%" width="50%" style="margin:auto; display:block;"  src="{{asset('/imgs/plants/'.$plant->img_src)}}">
 								</div>
 								<div class="col-md-9">
 									<a href="{{ url('/plant_data/'.$plant->id)}}"><h4>{{$plant->c_name}}</h4></a>
 									<div style="margin-left: 1%">
-										{{$plant->sum}}
+										{{$plant->anatomy}}
 									</div>
 								</div>
 							</div>
 						</li>
 						@endforeach
 					</ul>
+					{{$plants->links('includes.paginator')}}
 				</div>
 			</div>
 		@endisset

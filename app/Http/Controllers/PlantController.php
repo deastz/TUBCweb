@@ -8,7 +8,7 @@ use App\Plant as Plant;
 class PlantController extends Controller
 {
   public function lists(){
-    $plants = Plant::get();
+    $plants = Plant::simplePaginate(5);
     return view('layouts.plantlist')->with('plants',$plants);
   }
   public function show($id){
@@ -17,7 +17,7 @@ class PlantController extends Controller
   }
   public function search(Request $request){
     $key = $request->input('inputSearch');
-    $plants = Plant::where('c_name',$key)->get();
+    $plants = Plant::where('c_name','like','%'.$key.'%')->orWhere('eng_name','like','%'.$key.'%')->simplePaginate(5);
     return view('layouts.searchresult')->with('plants',$plants)->with('key',$key);
   }
 }

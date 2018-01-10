@@ -32,18 +32,19 @@
 						<li class="list-group-item">
 							<div class="row">
 								<div class="col-md-3">
-									<img height="50%" width="50%" style="margin:auto; display:block;"  src="{{$plant->img_src}}">
+									<img height="50%" width="50%" style="margin:auto; display:block;"  src="{{asset('/imgs/plants/'.$plant->img_src)}}">
 								</div>
 								<div class="col-md-9">
 									<a href="{{ url('/plant_data/'.$plant->id)}}"><h4>{{$plant->c_name}}</h4></a>
 									<div style="margin-left: 1%">
-										{{$plant->sum}}
+										{{$plant->anatomy}}
 									</div>
 								</div>
 							</div>
 						</li>
 						@endforeach
 					</ul>
+					{{$plants->links('includes.paginator')}}
 				</div>
 			</div>
 		@endisset

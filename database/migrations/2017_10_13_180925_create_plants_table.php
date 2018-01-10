@@ -16,13 +16,16 @@ class CreatePlantsTable extends Migration
         Schema::create('plants',function(Blueprint $table){
           $table->integer('id');
           $table->primary('id');
+          $table->string('title');
+          $table->string('eng_name');
           $table->string('c_name');
           $table->string('s_name');
           $table->string('img_src');
-          $table->string('sum');
-          $table->string('anatomy');
-          $table->string('usage');
-          $table->string('place');
+          $table->text('anatomy');
+          $table->text('usage');
+          $table->text('trivia')->nullable();
+          $table->text('area');
+          $table->text('at_school');
         });
     }
 
